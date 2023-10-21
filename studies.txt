@@ -1,0 +1,5 @@
+Decorator tương đương với Anotation bên java
+
+@Controller()
+
+@ là Decorator còn Controller là expression
