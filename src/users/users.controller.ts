@@ -2,7 +2,9 @@ import { Body, Controller, Delete, Get, Param, Post, Put } from '@nestjs/common'
 import { CreateUserDto } from './dto/create-user.dto'
 import { UpdateUserDto } from './dto/update-user.dto'
 import { UsersService } from './users.service'
+import { Public } from 'src/decorator/customize'
 
+@Public()
 @Controller('users')
 export class UsersController {
     constructor(private readonly usersService: UsersService) {}
